@@ -4,7 +4,6 @@ function toGetPlayerName(textFieldId){
     return playerName;
 }
 
-
 /* Function To Set Selected Player Into The Order List */
 function setOrderListAndDisabledBtn(playerName, buttonId, divId){
     const playerlist = document.createElement('li');
@@ -14,7 +13,6 @@ function setOrderListAndDisabledBtn(playerName, buttonId, divId){
         alert("You Can Not Select More Than Five Player");
         return;
     }
-
     const button = document.getElementById(buttonId);
     button.style.backgroundColor = '#004D98';
     button.style.color = '#EDBB00';
@@ -24,7 +22,6 @@ function setOrderListAndDisabledBtn(playerName, buttonId, divId){
     cardDiv.style.border = "4px solid #EDBB00";
     cardDiv.style.borderRadius = "3px";
     button.setAttribute('disabled', true);
-
     listParent.appendChild(playerlist);
 }
 
