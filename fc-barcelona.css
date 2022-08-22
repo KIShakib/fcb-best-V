@@ -38,6 +38,7 @@ body{
     text-shadow: 1px 1px #EDBB00;
 }
 .select-btn{
+    font-weight: 700;
     padding: 3px 30px;
     border: none;
     border-radius: 2px;
@@ -50,6 +51,9 @@ body{
     font-size: 1.1em;
     color: #EDBB00;
     font-weight: 500;
+}
+#list-parent li{
+    list-style: decimal;
 }
 .calc-div{
     padding: 10px 5px;
