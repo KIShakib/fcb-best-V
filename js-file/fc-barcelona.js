@@ -81,6 +81,7 @@ document.getElementById('calc-total-btn').addEventListener('click', function(){
     }
     if(playerExpenses <= 0){
         alert('Please Select Player & Input Their Market Value')
+        return;
     }
     const overallExpenses = playerExpenses + directorExpenses + headCoachExpenses;
     setTextFiledInnerText('total-expense', overallExpenses);
