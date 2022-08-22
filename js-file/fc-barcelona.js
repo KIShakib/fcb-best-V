@@ -79,6 +79,9 @@ document.getElementById('calc-total-btn').addEventListener('click', function(){
         alert('Head Coach Expense Value Can Not Be' + ' ' + headCoachExpenses);
         return;
     }
+    if(playerExpenses <= 0){
+        alert('Please Select Player & Input Their Market Value')
+    }
     const overallExpenses = playerExpenses + directorExpenses + headCoachExpenses;
     setTextFiledInnerText('total-expense', overallExpenses);
 })
