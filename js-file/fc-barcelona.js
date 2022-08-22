@@ -54,7 +54,11 @@ document.getElementById('select-btn12').addEventListener('click', function(){
 document.getElementById('calc-btn').addEventListener('click', function(){
     const addedPlayer = orderListCounter('list-parent');
     const inputFieldNum = inputFieldValue('player-market-value');
-    if(Number.isNaN(inputFieldNum) || inputFieldNum < 0){
+    if(addedPlayer < 1){
+        alert('You Can Not Play The eFOOTBALL2022 Without Player...');
+        return;
+    }
+    else if(Number.isNaN(inputFieldNum) || inputFieldNum <= 0){
         alert('Player Market Value Can Not Be' + ' ' + inputFieldNum);
         return;
     }
@@ -66,12 +70,12 @@ document.getElementById('calc-btn').addEventListener('click', function(){
 document.getElementById('calc-total-btn').addEventListener('click', function(){
     const playerExpenses = toGetTextFieldValue('player-expenses');
     const directorExpenses = inputFieldValue('director-expense');
-    if(Number.isNaN(directorExpenses) || directorExpenses < 0){
+    if(Number.isNaN(directorExpenses) || directorExpenses <= 0){
         alert('Team Director Expense Value Can Not Be' + ' ' + directorExpenses);
         return;
     }
     const headCoachExpenses = inputFieldValue('head-coach-expense');
-    if(Number.isNaN(headCoachExpenses) || headCoachExpenses < 0){
+    if(Number.isNaN(headCoachExpenses) || headCoachExpenses <= 0){
         alert('Head Coach Expense Value Can Not Be' + ' ' + headCoachExpenses);
         return;
     }
