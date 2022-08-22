@@ -45,14 +45,14 @@ body{
     background-color: #718093;
 }
 .li-div{
-    height: 150px;
+    height: 155px;
+    border: 4px solid #004D98;
 }
 .li-div ul>li{
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #EDBB00;
-    font-weight: 500;
-}
-#list-parent li{
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
     list-style: decimal;
 }
 .calc-div{

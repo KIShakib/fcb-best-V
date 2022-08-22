@@ -11,7 +11,7 @@ function setOrderListAndDisabledBtn(playerName, buttonId, divId){
     playerlist.innerText = playerName;
     const listParent = document.getElementById('list-parent');
     if(listParent.childElementCount > 4){
-        alert('You Can Not Select More Than Five Player');
+        alert("You Can Not Select More Than Five Player");
         return;
     }
 
@@ -26,4 +26,28 @@ function setOrderListAndDisabledBtn(playerName, buttonId, divId){
     button.setAttribute('disabled', true);
 
     listParent.appendChild(playerlist);
+}
+
+/* Function For Added Order List Count Finder */
+function orderListCounter(parentId){
+    const listAddedPlayer = document.getElementById(parentId).childElementCount;
+    return listAddedPlayer;
+}
+
+/* Function Of Input Field Value Finder */
+function inputFieldValue(inputFieldId){
+    const inputFieldNum = parseInt(document.getElementById(inputFieldId).value);
+    return inputFieldNum;
+}
+
+/* Function To Get Text Field InnerText Vaue */
+function toGetTextFieldValue(textFieldId){
+    const textFieldValue = parseInt(document.getElementById(textFieldId).innerText);
+    return textFieldValue;
+}
+
+/* Function Of Set Text Field Value */
+function setTextFiledInnerText(fieldId, newValue){
+    const textField = document.getElementById(fieldId);
+    textField.innerText = newValue;
 }

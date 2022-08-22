@@ -36,9 +36,10 @@
         <h1 class="text-center card-heading-text">Select Your FC Barcelona Top Five <br>And Play efootball2022</h1>
       </div>
     </section>
-    <!-- Card Section Start -->
+
     <section class="w-75 mx-auto m-5 row">
 
+    <!-- Card Section Start -->
       <div class="col-lg-8 col-md-8 col-sm-12">
         <!-- Card Row 1 Start -->
         <div class="card-group gap-2 mb-4">
@@ -160,7 +161,7 @@
           <div id="card-div11" class="card rounded card-container">
             <img src="./images/jugador_fitxa-ter_stegen.png" class="card-img-top rounded" alt="...">
             <div class="card-body">
-              <h5 id="stegan" class="card-title text-center player-stats">MAT Stegan</h5>
+              <h5 id="stegan" class="card-title text-center player-stats">MAT Stegan <i class="fa-solid fa-g captain"></i> <i class="fa-regular fa-k captain"></i></h5>
               <p class="card-text  text-center player-stats">95 Reflex - 99 Shot Stop</p>
             </div>
             <div class="mx-auto">
@@ -180,10 +181,13 @@
         </div>
         <!-- Card Row 4 End -->
       </div>
-      <!-- row row-cols-1 row-cols-md-2 g-4 -->
+  <!-- Card Section End -->
+
+
+  <!-- Side Nav Start -->
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="calc-section row">
-            <!-- Selection V Section -->
+            <!-- Selection V Section Start -->
             <div class="col-12">
               <h5 class="text-center budget-text my-4">Your Selected Player</h5>
                 <div class="li-div">
@@ -191,6 +195,7 @@
                   </ul>
                 </div>
             </div>
+            <!-- Selection V Section Start -->
     
             <!-- Calculate Section -->
             <div class="col-12">
@@ -198,49 +203,36 @@
                 <div class="calc-div">
                   <h5 class="text-center budget-text mb-4">BUDGET</h5>
                   <div class="row">
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Player Market Value</p></div>
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" class="input-field text-center"></div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Player Market Value [M]</div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" id="player-market-value" class="input-field text-center"></div>
                   </div>
-                  <button class="calc-btn">CALCULATE</button>
+                  <button id="calc-btn" class="calc-btn">CALCULATE</button>
                   <div class="player-expenses gap-5">
                     <p class="input-description">Player Expenses</p>
-                    <p class="input-description"><span>00</span> M</p>
+                    <p class="input-description"><span id="player-expenses">00</span> M</p>
                   </div>
                   <div class="row">
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Team Director</p></div>
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" class="input-field text-center"></div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Team Director  [M]</p></div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" id="director-expense" class="input-field text-center"></div>
                   </div>
                   <div class="row">
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Head Coach</p></div>
-                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" class="input-field text-center"></div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><p class="input-description">Head Coach  [M]</p></div>
+                    <div class=" col-lg-6 col-6 col-md-12 col-sm-12"><input type="text" value="00" id="head-coach-expense" class="input-field text-center"></div>
                   </div>
-                  <button class="calc-btn">CALCULATE TOTAL</button>
+                  <button id="calc-total-btn" class="calc-btn">CALCULATE TOTAL</button>
                   <div class="player-expenses gap-5">
                     <p class="input-description">Total Expense</p>
-                    <p class="input-description"><span>00</span> M</p>
+                    <p class="input-description"><span id="total-expense">00</span> M</p>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Calculation Section End -->
           </div>
       </div>
+  <!-- Side Nav End -->  
     </section>
-    <!-- Card Section End -->
-
-
-    <!-- Calculation Section Start -->
-
-    <section class="w-75 mx-auto m-5">
-
-      
-
-    </section>
-
-
-
-
-    <!-- Calculation Section End -->
-
+  
   </main>
 
   <!-- Footer Section -->
@@ -248,14 +240,16 @@
   <footer>
     <h3 class="footer-text">Més que un club</h3>
     <div class="footer-icon">
-      <a href="https://www.fcbarcelona.com/en/"><i class="fa-solid fa-f"></i></a>
-      <a href="https://www.facebook.com/search/top?q=fc%20barcelona"><i class="fa-brands fa-square-facebook"></i></a>
-      <a href="https://www.instagram.com/fcbarcelona/"><i class="fa-brands fa-square-instagram"></i></a>
-      <a href="https://twitter.com/fcbarcelona_fra"><i class="fa-brands fa-square-twitter"></i></a>
-      <a href="https://www.youtube.com/c/FCBarcelona"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.fcbarcelona.com/en/" target="_blank"><i class="fa-solid fa-f"></i></a>
+      <a href="https://www.facebook.com/search/top?q=fc%20barcelona" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://www.instagram.com/fcbarcelona/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://twitter.com/fcbarcelona_fra" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://www.youtube.com/c/FCBarcelona" target="_blank"><i class="fa-brands fa-youtube"></i></a>
     </div>
     <p class="text-center text-warning">Copyright: FC Barcelona 2022</p>
   </footer>
+
+
 <!-- JavaScript File -->
 <script src="./js-file/function.js"></script>
 <script src="./js-file/fc-barcelona.js"></script>
